@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: none;
+}
+
+body {
+  background-color: burlywood;
+  display: flex;
+  place-content: center;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+.iphone {
+  padding: 10vh 1.5vh;
+  border-radius: 6vh;
+  position: relative;
+  background-color: white;
+  border: 0.5vh solid black;
+}
+
+.home, .camera, .proximity, .speaker, .silence, .volume-up, .volume-down, .sleep {
+  position: absolute;
+}
+
+.home, .camera, .proximity {
+  border-radius: 50%;
+}
+
+.speaker, .silence, .volume-up, .volume-down, .sleep, .proximity {
+  background-color: black;
+}
+
+.home, .speaker, .camera, .proximity {
+  left: 50%;
+}
+
+.home, .speaker {
+  margin-left: -3vh;
+  width: 6vh;
+}
+
+.home, .camera {
+  border: 0.5vh solid black;
+}
+
+.home {
+  height: 6vh;
+  bottom: 2vh;
+}
+
+.speaker {
+  top: 4.75vh;
+  height: 0.5vh;
+  border-radius: 0.5vh;
+}
+
+.camera {
+  width: 1.5vh;
+  height: 1.5vh;
+  top: 4.25vh;
+  margin-left: -6.5vh;
+}
+
+.proximity {
+  width: 1vh;
+  height: 1vh;
+  top: 2vh;
+  margin-left: -0.5vh;
+}
+
+.silence, .volume-up, .volume-down, .sleep {
+  width: 0.5vh;
+}
+
+.volume-up, .volume-down, .sleep {
+  height: 5vh;
+}
+
+.silence, .volume-up, .volume-down {
+  left: -0.75vh;
+}
+
+.silence {
+  height: 3vh;
+  top: 10vh;
+}
+
+.volume-up, .sleep {
+  top: 17vh;
+}
+
+.volume-down {
+  top: 24vh;
+}
+
+.sleep {
+  right: -0.75vh;
+}
+
+.container {
+  height: 100vh;
+  width: 50vh;
+  background-color: black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  /* -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75); */
+}
+
+.wrapper {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(6,1fr);
+  gap: 10px;
+}
+
+.screen {
+  grid-column: 1/-1;
+  color: black;
+  text-align: right;
+  padding: 0.5rem;
+  font-size: 4rem;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.btn {
+  display: grid;
+  place-content: center;
+  background-color: rgb(54, 52, 52);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: gray;
+}
+
+.light-gray {
+  background-color: gray;
+  color: black;
+}
+
+.light-gray:hover {
+  background-color: white;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.orange:hover {
+  background-color: white;
+  color: orange;
+}
+
+.zero {
+  grid-column: 1 / span 2;
+  border-radius: 25px;
+  place-content: unset;
+  align-items: center;
+  padding-left: 4rem;
+}
